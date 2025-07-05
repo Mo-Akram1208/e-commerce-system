@@ -10,8 +10,8 @@ public abstract class Product{
 
 
     public Product(String name, double price, int quantity) {
-        if (price < 0) throw new IllegalArgumentException("Price must be non-negative");
-        if (quantity < 0) throw new IllegalArgumentException("Quantity must be non-negative");
+        if (price < 0) throw new IllegalArgumentException("Price must be positive");
+        if (quantity < 0) throw new IllegalArgumentException("Quantity must be positive");
         this.name = name;
         this.price = price;
         this.quantity = quantity;
